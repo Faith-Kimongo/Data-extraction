@@ -1,0 +1,2 @@
+import wget
+url = "https://data.cms.gov/provider-data/sites/default/files/archive/Doctors%20and%20clinicians/2022/doctors_and_clinicians_02_2022.zip

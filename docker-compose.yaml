@@ -1,0 +1,28 @@
+version: "3"
+
+volumes:
+     db_vol :
+
+services:
+  db:
+    image: mysql
+    ports:
+      - '3306:3306'
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: etl@123
+    volumes:
+       - db_vol:/var/lib/mysql
+    
+  
+    
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+         
+      
+     
+
